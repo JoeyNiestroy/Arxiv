@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>An Exploration of the Arxiv</title>
+</head>
+<body>
+<h1>An Exploration of the Arxiv</h1>
+<p><strong>Joey Niestroy</strong><br>
+April 2024</p>
+
+<h2>1. Introduction and Goals</h2>
+<p>Arxiv is a site dedicated to providing free access to research papers to the public, and offering a platform for researchers to publish their work to a large audience. As part of that goal, they open source all data on the site, including all articles and their metadata. This is the dataset we will be working with for the project. We hope to answer the following questions with our final product:</p>
+<ol>
+<li>What does the research landscape look like on Arxiv?</li>
+<li>How has that landscape changed over the lifespan of the site, and what if any trends are behind those changes?</li>
+<li>Can we use AI to better understand and explore the underlying structure of the research?</li>
+</ol>
+
+<h2>2. Data Acquisition</h2>
+<p>The full metadata set can be found at either:</p>
+<ul>
+<li><a href="https://www.kaggle.com/datasets/Cornell-University/arxiv/versions/171/data">https://www.kaggle.com/datasets/Cornell-University/arxiv/versions/171/data</a></li>
+<li><a href="https://huggingface.co/datasets/arxiv_dataset">https://huggingface.co/datasets/arxiv_dataset</a></li>
+</ul>
+<p>However, the full articles can be retrieved in a variety of ways and that information can also be found at the Kaggle links or the official Arxiv site: <a href="https://info.arxiv.org/help/bulk_data_s3.html">https://info.arxiv.org/help/bulk_data_s3.html</a></p>
+
+<h2>3. Data Overview</h2>
+<p>The metadata provided for each article is quite exhaustive but for our usage the relevant features in the data are:</p>
+<ul>
+<li>Categories: The categories selected by the authors that the paper falls under. Can be broken into major and sub categories.</li>
+<li>Abstract: The full abstract for the paper.</li>
+<li>Versions: Data regarding publishing dates.</li>
+</ul>
+<p>Let’s take a more quantitative look at that data though:</p>
+<ul>
+<li>Total Articles Count: 2,440,876</li>
+<li>Unique Categories: 155</li>
+<li>Number of years: 18</li>
+<li>Average Articles per year: 135,604</li>
+</ul>
+
+<h2>4. Visualizations</h2>
+<p>The first question we’re hoping to answer is about the landscape of research so let’s take a broad look at the subject distributions (figure 1), and then we can zoom in further and look at only the subcategories, for example, in Mathematics though the years (figure 2). Finally, let's take a timeseries approach, which will help with us describing how has the data has changed over time (figure 3).</p>
+
+</body>
+</html>
