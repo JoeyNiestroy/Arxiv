@@ -4,42 +4,140 @@
 <meta charset="UTF-8">
 <title>An Exploration of the Arxiv</title>
 <link rel="stylesheet" href="style.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
+
+
+<div id="graph"></div>
+
 <h1>An Exploration of the Arxiv</h1>
 
 <h2>1. What exactly is the Arxiv?</h2>
 <p>Arxiv is a site dedicated to providing free access to research papers to the public, and offering a platform for researchers to publish their 
     work to a large audience. As part of that goal, they open source all data on the site, including all articles and their metadata. 
-    This is the dataset that supports all the works below. You can view the data section for more detail </p>
-<ol>
-<li>What does the research landscape look like on Arxiv?</li>
-<li>How has that landscape changed over the lifespan of the site, and what if any trends are behind those changes?</li>
-<li>Can we use AI to better understand and explore the underlying structure of the research?</li>
-</ol>
+    This is the dataset that supports all the works below. You can view the data section for more detail </p> 
+    <b>Feel free to click on any of the specific questions below to jump striaght there</b>
+    <ol>
+        <li> <a href='#landscape'>What does the research landscape look like on Arxiv?</a></li>
+        <li><a href='#changes'>How has that landscape changed over the lifespan of the site?</a></li>
+        <li><a href='#ai'>Can we use AI to better understand and explore the underlying structure of the research?</a></li>
+    </ol>
 
 
-<h2>2. What does the research landscape look like on Arxiv?</h2>
+<h2 id ='landscape'>1. What does the research landscape look like on Arxiv?</h2>
 <p>The site focuses solely on STEM realted fields, these fields can be broken down to the following major categories</p>
+<b>Feel free to click on any of the specific sections below to jump striaght there</b>
 <ol>
-    <li>Mathematics</li>
-    <li>Computer Science</li>
-    <li>Physics</li>
-    <li>Electrical Engineering</li>
-    <li>Economics</li>
-    <li>Quantitative Biology</li>
-    <li>Quantitative Finance</li>
-    <li>Statistics</li>
+    <li><a href="#mathematics">Mathematics</a></li>
+    <li><a href="#computer-science">Computer Science</a></li>
+    <li><a href="#physics">Physics</a></li>
+    <li><a href="#electrical-engineering">Electrical Engineering</a></li>
+    <li><a href="#economics">Economics</a></li>
+    <li><a href="#quantitative-biology">Quantitative Biology</a></li>
+    <li><a href="#quantitative-finance">Quantitative Finance</a></li>
+    <li><a href="#statistics">Statistics</a></li>
 </ol>
 <p>Let's look at these prevelence of the these fields across all avialble years of data. We'll do this by total article counts 
     and their assinged categories</p>
 
-<iframe src="overview.html"
-height="420" width="820"
->
+    <iframe src="overview.html" height="420" width="920" style="display: block; margin: auto;  border: none;">
+    </iframe>
+
+
+<h2 id ='changes'>2. How has that landscape changes?</h2>
+
+<h2 id="ai">Can we use AI to better understand and explore the underlying structure of the research?</h2>
+
+<h2 id="mathematics">Mathematics</h2>
+<p>All though not as dominate as physics or computer science; mathematics is a facisnating field and a personal favorite of the author. 
+    Let's start by looking at timeseries of it's prevelance throughout the years.</p> 
+    <em>*Acticles can cross listed with multiple categories, so these percentages may be inflated.</em>
+
+    <iframe src="math_time.html" height="420" width="920" style="display: block; margin: auto;  border: none;">
+    </iframe>
+<p> </p>
+
+    <iframe src="math_cat.html" height="520" width="920" style="display: block; margin: auto;  border: none;">
+    </iframe>
+
+
+<h2 id="computer-science">Computer Science</h2>
+<p>Information about Computer Science...</p>
+
+
+<iframe src="cs_time.html" height="420" width="920" style="display: block; margin: auto;  border: none;">
 </iframe>
 
 
+<iframe src="cs_cat.html" height="520" width="920" style="display: block; margin: auto;  border: none;">
+</iframe>
+
+
+
+<h2 id="physics">Physics</h2>
+<p>Information about Physics...</p>
+
+<iframe src="physics_time.html" height="420" width="920" style="display: block; margin: auto;  border: none;">
+</iframe>
+
+
+<iframe src="physics_cat.html" height="520" width="920" style="display: block; margin: auto;  border: none;">
+</iframe>
+
+
+
+<h2 id="electrical-engineering">Electrical Engineering</h2>
+<p>Information about Electrical Engineering...</p>
+
+<iframe src="ee_time.html" height="420" width="920" style="display: block; margin: auto;  border: none;">
+</iframe>
+
+
+<iframe src="ee_cat.html" height="520" width="920" style="display: block; margin: auto;  border: none;">
+</iframe>
+
+
+<h2 id="economics">Economics</h2>
+<p>Information about Economics...</p>
+
+<iframe src="econ_time.html" height="420" width="920" style="display: block; margin: auto;  border: none;">
+</iframe>
+
+
+<iframe src="econ_cat.html" height="520" width="920" style="display: block; margin: auto;  border: none;">
+</iframe>
+
+<h2 id="quantitative-biology">Quantitative Biology</h2>
+<p>Information about Quantitative Biology...</p>
+
+<iframe src="qbio_time.html" height="420" width="920" style="display: block; margin: auto;  border: none;">
+</iframe>
+
+
+<iframe src="qbio_cat.html" height="520" width="920" style="display: block; margin: auto;  border: none;">
+</iframe>
+
+
+<h2 id="quantitative-finance">Quantitative Finance</h2>
+<p>Information about Quantitative Finance...</p>
+
+<iframe src="qfin_time.html" height="420" width="920" style="display: block; margin: auto;  border: none;">
+</iframe>
+
+
+<iframe src="qfin_cat.html" height="520" width="920" style="display: block; margin: auto;  border: none;">
+</iframe>
+
+<h2 id="statistics">Statistics</h2>
+<p>Information about Statistics...</p>
+    
+<iframe src="stats_time.html" height="420" width="920" style="display: block; margin: auto;  border: none;">
+</iframe>
+
+
+<iframe src="stats_cat.html" height="520" width="920" style="display: block; margin: auto;  border: none;">
+</iframe>
 
 <h2>2. Data Acquisition</h2>
 <p>The full metadata set can be found at either:</p>
@@ -66,6 +164,68 @@ height="420" width="820"
 
 <h2>4. Visualizations</h2>
 <p>The first question we’re hoping to answer is about the landscape of research so let’s take a broad look at the subject distributions (figure 1), and then we can zoom in further and look at only the subcategories, for example, in Mathematics though the years (figure 2). Finally, let's take a timeseries approach, which will help with us describing how has the data has changed over time (figure 3).</p>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const width = 600, height = 600;
+    const nodes = Array.from({length: 20}, (_, i) => ({id: i}));
+    const links = Array.from({length: 30}, () => ({
+        source: Math.floor(Math.random() * nodes.length),
+        target: Math.floor(Math.random() * nodes.length),
+    }));
+
+    const svg = d3.select("#graph").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    const simulation = d3.forceSimulation(nodes)
+        .force("link", d3.forceLink(links).distance(50))
+        .force("charge", d3.forceManyBody().strength(-400))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("x", d3.forceX())
+        .force("y", d3.forceY());
+
+    const link = svg.append("g")
+        .attr("stroke", "#999")
+        .attr("stroke-opacity", 0.6)
+        .selectAll("line")
+        .data(links)
+        .enter().append("line");
+
+    const node = svg.append("g")
+        .attr("stroke", "#fff")
+        .attr("stroke-width", 1.5)
+        .selectAll("circle")
+        .data(nodes)
+        .enter().append("circle")
+        .attr("r", 5)
+        .attr("fill", d3.schemeCategory10[nodes.length % 10]);
+
+    simulation.on("tick", () => {
+        link
+            .attr("x1", d => d.source.x)
+            .attr("y1", d => d.source.y)
+            .attr("x2", d => d.target.x)
+            .attr("y2", d => d.target.y);
+
+        node
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y);
+    });
+
+    // Trigger the fade-out after 5 seconds
+    setTimeout(() => {
+        const graph = d3.select("#graph");
+        graph.transition().duration(2000).style("opacity", 0)
+            .on("end", () => {
+                graph.style("visibility", "hidden");
+                graph.style("display", "none"); // This collapses the space completely
+            });
+    }, 5000);
+});
+    </script>
+    
+
 
 </body>
 </html>
