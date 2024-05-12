@@ -52,3 +52,41 @@ footer {
     font-size: 0.9em;
     color: #7f8c8d;
 }
+
+
+li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 0; /* Remove padding from the li */
+    border-left: 5px solid #2980b9;
+}
+
+li a {
+    display: block; /* Make the anchor fill the li */
+    padding: 10px; /* Move padding from li to a */
+    color: #2980b9; /* Inherit color style for consistency */
+    background-color: transparent; /* Ensures no background color conflicts */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+li a:hover, li a:focus {
+    background-color: #ecf0f1; /* Light background on hover/focus for better visibility */
+    color: #333; /* Darker text on hover/focus for contrast */
+    text-decoration: none; /* Override default underline on hover */
+}
+
+li a:active {
+    background-color: #bdc3c7; /* Slightly darker background when clicked */
+    color: #2c3e50; /* Matching dark text when active */
+}
+
+#graph {
+    width: 600px;
+    height: 600px;
+    margin: 20px auto;
+    transition: opacity 2s ease-out, visibility 0s linear 2s; /* Add visibility transition */
+    opacity: 1; /* Start fully visible */
+    visibility: visible; /* Make sure the element is visible */
+}
+
+
