@@ -57,36 +57,36 @@ footer {
 li {
     background-color: #fff;
     margin-bottom: 10px;
-    padding: 0; /* Remove padding from the li */
+    padding: 0; 
     border-left: 5px solid #2980b9;
 }
 
 li a {
-    display: block; /* Make the anchor fill the li */
-    padding: 10px; /* Move padding from li to a */
-    color: #2980b9; /* Inherit color style for consistency */
-    background-color: transparent; /* Ensures no background color conflicts */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    display: block;
+    padding: 10px; 
+    color: #2980b9; 
+    background-color: transparent; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 li a:hover, li a:focus {
-    background-color: #ecf0f1; /* Light background on hover/focus for better visibility */
-    color: #333; /* Darker text on hover/focus for contrast */
-    text-decoration: none; /* Override default underline on hover */
+    background-color: #ecf0f1; 
+    color: #333; 
+    text-decoration: none; 
 }
 
 li a:active {
-    background-color: #bdc3c7; /* Slightly darker background when clicked */
-    color: #2c3e50; /* Matching dark text when active */
+    background-color: #bdc3c7; 
+    color: #2c3e50;
 }
 
 #graph {
     width: 600px;
     height: 600px;
     margin: 20px auto;
-    transition: opacity 2s ease-out, visibility 0s linear 2s; /* Add visibility transition */
-    opacity: 1; /* Start fully visible */
-    visibility: visible; /* Make sure the element is visible */
+    transition: opacity 2s ease-out, visibility 0s linear 2s; 
+    opacity: 1; 
+    visibility: visible; 
 }
 
 
