@@ -35,13 +35,6 @@ ul {
     padding: 0;
 }
 
-li {
-    background-color: #fff;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-left: 5px solid #2980b9;
-}
-
 p {
     line-height: 1.6;
 }
@@ -78,15 +71,6 @@ li a:hover, li a:focus {
 li a:active {
     background-color: #bdc3c7; 
     color: #2c3e50;
-}
-
-#graph {
-    width: 600px;
-    height: 600px;
-    margin: 20px auto;
-    transition: opacity 2s ease-out, visibility 0s linear 2s; 
-    opacity: 1; 
-    visibility: visible; 
 }
 
 
